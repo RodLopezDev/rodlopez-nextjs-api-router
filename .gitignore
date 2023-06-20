@@ -1,0 +1,8 @@
+.jest/setEnvVars.js
+node_modules
+dist
+coverage
+target
+.env
+server/.env
+**/.DS_Store/**

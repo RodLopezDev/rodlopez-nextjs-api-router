@@ -1,0 +1,36 @@
+{
+  "name": "@rodlopez/etl-postgresql",
+  "version": "1.0.8",
+  "description": "",
+  "keywords": [
+    "etl",
+    "plugin",
+    "postgresql",
+    "rodlopez"
+  ],
+  "scripts": {
+    "start:dev": "npx nodemon server/index.ts",
+    "build": "rm -rf ./dist && tsc -p tsconfig.build.json"
+  },
+  "author": "RodLopezDev",
+  "license": "ISC",
+  "peerDependencies": {
+    "next": "^13.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "nodemon": "2.0.22",
+    "ts-node": "10.9.1",
+    "typescript": "5.1.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "bugs": {
+    "url": "https://github.com/RodLopezDev/etl-postgresql/issues"
+  },
+  "homepage": "https://github.com/RodLopezDev/etl-postgresql#readme"
+}
