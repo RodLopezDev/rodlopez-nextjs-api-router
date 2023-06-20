@@ -1,11 +1,13 @@
 {
-  "name": "@rodlopez/etl-postgresql",
-  "version": "1.0.8",
+  "name": "@rodlopez/nextjs-api-router",
+  "version": "1.0.0",
   "description": "",
   "keywords": [
-    "etl",
-    "plugin",
-    "postgresql",
+    "nextjs",
+    "next-js",
+    "next",
+    "router",
+    "api",
     "rodlopez"
   ],
   "scripts": {
@@ -30,7 +32,7 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "bugs": {
-    "url": "https://github.com/RodLopezDev/etl-postgresql/issues"
+    "url": "https://github.com/RodLopezDev/rodlopez-nextjs-api-router/issues"
   },
-  "homepage": "https://github.com/RodLopezDev/etl-postgresql#readme"
+  "homepage": "https://github.com/RodLopezDev/rodlopez-nextjs-api-router#readme"
 }
