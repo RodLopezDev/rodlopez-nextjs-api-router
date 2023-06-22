@@ -3,7 +3,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 export type Methods = "GET" | "POST" | "PUT" | "PATCH" | "DELETE" | "OPTIONS";
 
 type ApiExecution = (
-  req: NextApiRequest
+  req: NextApiRequest,
+  res: NextApiResponse
 ) => Promise<{ status: number; data: any }>;
 
 type ExceptionHandle = (e: any) => { status: number; data: any };
@@ -28,7 +29,7 @@ export const generateApiRoute = (
     }
 
     try {
-      const result = await apiRoute.run(req);
+      const result = await apiRoute.run(req, res);
       return res.status(result.status).json(result.data);
     } catch (e: any) {
       if (typeof apiRoute?.errorHandler === "function") {
